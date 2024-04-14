@@ -59,7 +59,7 @@ export default function CovidRecords() {
   return (
     <div>
       <h1>All Records</h1>{" "}
-      <Button variant="info" onClick={refresh}>
+      <Button variant="success" onClick={refresh}>
         Refresh
       </Button>
       <p>{message}</p>

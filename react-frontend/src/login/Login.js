@@ -113,7 +113,7 @@ export default function Login(props) {
         </Form.Group>
       </Form>
       <div className="d-grid gap-2">
-        <Button variant="primary" onClick={handleLogin}>
+        <Button variant="success" onClick={handleLogin}>
           Log In
         </Button>
       </div>

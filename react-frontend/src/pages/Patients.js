@@ -52,7 +52,7 @@ export default function Patients() {
     if (error){ return `Error! ${error.message}`;}
   return (
     <Container>
-    <Table striped bordered hover variant="dark" className='text-center'>
+    <Table striped bordered hover variant="info" className='text-center'>
         <thead>
           <tr>
             <th>Name</th>

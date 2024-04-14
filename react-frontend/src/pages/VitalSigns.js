@@ -78,9 +78,6 @@ export default function VitalSigns() {
 
     return (
         <MDBContainer fluid style={{ overflow: "auto" }}>
-
-            <div className="p-5 bg-image" style={{ backgroundImage: 'url(https://mdbootstrap.com/img/new/textures/full/171.jpg)', height: '300px' }}></div>
-
             <MDBCard className=' p-5 shadow-5' style={{ width: '50%', marginTop: '-100px', marginLeft: 'auto', marginRight: 'auto', background: 'hsla(0, 0%, 100%, 0.8)', backdropFilter: 'blur(30px)' }}>
                 <MDBCardBody className='p-5 text-center'>
 
@@ -127,7 +124,7 @@ export default function VitalSigns() {
 
                     </MDBRow>
 
-                    <MDBBtn className='w-100 mb-4' size='md' onClick={()=>{onSubmit()}}> Submit</MDBBtn>
+                    <MDBBtn className=' btn btn-success w-100 mb-4' size='md' onClick={()=>{onSubmit()}}> Submit</MDBBtn>
 
 
 

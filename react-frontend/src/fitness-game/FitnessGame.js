@@ -1,34 +1,22 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Unity, useUnityContext } from "react-unity-webgl";
 
-//solution for error: https://github.com/jeffreylanters/react-unity-webgl/issues/22
-
 export default function FitnessGame() {
-  const {
-    unityProvider,
-    UNSAFE__detachAndUnloadImmediate: detachAndUnloadImmediate,
-  } = useUnityContext({
-    loaderUrl: "FitnessGameBuild/Build/FitnessGameBuild.loader.js",
-    dataUrl: "FitnessGameBuild/Build/FitnessGameBuild.data",
-    frameworkUrl: "FitnessGameBuild/Build/FitnessGameBuild.framework.js",
-    codeUrl: "FitnessGameBuild/Build/FitnessGameBuild.wasm",
+  const { unityProvider } = useUnityContext({
+    loaderUrl: "/fitnessGame/Build/fitnessGame.loader.js",
+    dataUrl: "/fitnessGame/Build/fitnessGame.data",
+    frameworkUrl: "/fitnessGame/Build/fitnessGame.framework.js",
+    codeUrl: "/fitnessGame/Build/fitnessGame.wasm",
   });
-
-  useEffect(() => {
-    return () => {
-      detachAndUnloadImmediate().catch((reason) => {
-        console.log(reason);
-      });
-    };
-  }, [detachAndUnloadImmediate]);
 
   return (
     <div>
-      <h1>Fitness Game</h1>
-      <Unity
-        unityProvider={unityProvider}
-        style={{ width: 960, height: 540 }}
-      />
+      <h1 style={{justifySelf:"center",alignItems:"center", textAlign:"center"}}>Fitness Game</h1>
+      <Unity unityProvider={unityProvider} style={{ width: 960, height: 540, justifySelf:"center",alignItems:"center" }} />
     </div>
   );
 }
+
+    
+
+  

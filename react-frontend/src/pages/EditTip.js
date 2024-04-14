@@ -114,7 +114,7 @@ export default function EditTip() {
             onChange={(e) => setTip({ ...tip, description: e.target.value })}
           />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button variant="success" type="submit">
           Update Tip
         </Button>
       </Form>

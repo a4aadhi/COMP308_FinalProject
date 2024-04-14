@@ -166,7 +166,7 @@ export default function Register(props) {
         </Form.Group>
       </Form>
       <div className="d-grid gap-2">
-        <Button variant="primary" onClick={handleRegister}>
+        <Button variant="success" onClick={handleRegister}>
           Register
         </Button>
       </div>

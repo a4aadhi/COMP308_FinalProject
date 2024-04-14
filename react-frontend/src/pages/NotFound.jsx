@@ -7,7 +7,7 @@ export default function NotFound() {
         <FaExclamationTriangle className="text-danger" size='5cm' />
         <h1>404</h1>
         <p className="lead">Sorry, this page does not exist</p>
-        <Link to='/' className="btn btn-primary">
+        <Link to='/' className="btn btn-success">
             Go Back
         </Link>
     </div>  )

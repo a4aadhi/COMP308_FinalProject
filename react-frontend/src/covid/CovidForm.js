@@ -264,7 +264,7 @@ export default function CovidForm() {
             value={congestion}
           />
         </Form.Group>
-        <Button variant="primary" onClick={handleSubmit}>
+        <Button variant="success" onClick={handleSubmit}>
           Submit
         </Button>
       </Form>

@@ -156,7 +156,7 @@ export default function AddAlertModal(props) {
 
                                                      <button
                                                          type="submit"
-                                                         className="btn btn-primary"
+                                                         className="btn btn-success"
                                                          data-bs-dismiss="modal"
                                                      >
                                                          Submit
