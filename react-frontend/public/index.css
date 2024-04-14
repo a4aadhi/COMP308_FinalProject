@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #910a34; /* Light gray background */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray text color */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #555; /* Gray text color */
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff9900; /* Change the background color to your desired color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e68a00; /* Change the hover background color to a darker shade */
+}
+
+
+.error-message {
+    color: #dc3545; /* Red text color for error messages */
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.success-message {
+    color: #28a745; /* Green text color for success messages */
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.link {
+    color: #782375; /* Blue link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #f1720a; /* Darker blue on hover */
+}

@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 1vh;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(79deg, #34a9c6,#403f5a 48%,#95947c);
+  font-family: Arial, sans-serif; 
+  color: white; 
+}
+
+.auth-form-container {
+  padding: 2rem;
+  border: 2px solid #fff; 
+  border-radius: 20px; 
+  margin: 1rem; 
+  background-color: rgba(255, 255, 255, 0.2); 
+}
+
+input, button {
+  margin: 0.5rem 0;
+  padding: 1rem; 
+  border: 2px solid #ccc;
+  border-radius: 10px; 
+}
+
+button {
+  background-color: #fff; 
+  color: #333; 
+  font-weight: bold; 
+  cursor: pointer;
+}
+
+.link-btn {
+  margin: 0.1rem 0;
+  background: none;
+  color: #951186; 
+  text-decoration: none; 
+}
+
+.link-btn:hover {
+  color: #751065; 
+}
