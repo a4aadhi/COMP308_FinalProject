@@ -1,0 +1,40 @@
+import { gql } from "@apollo/client";
+
+const ADD_NURSE = gql`
+    mutation addNurse($name: String!, $userName: String!, $email: String!, $password: String!) {
+        addNurse(name: $name, userName: $userName, email: $email, password: $password) {
+            _id
+            name
+            userName
+            email
+            password
+        }
+    }
+`;
+
+const DELETE_NURSE = gql`
+    mutation deleteNurse($id: ID!) {
+        deleteNurse(id: $id) {
+            _id
+            name
+            userName
+            email
+            password
+        }
+    }
+`;
+
+const UPDATE_NURSE = gql`
+    mutation updateNurse($id: ID!, $name: String!, $userName: String!, $email: String!, $password: String!) {
+        updateNurse(id: $id, name: $name, userName: $userName, email: $email, password: $password) {
+            _id
+            name
+            userName
+            email
+            password
+        }
+    }
+`;
+
+
+export { ADD_NURSE, DELETE_NURSE, UPDATE_NURSE };
