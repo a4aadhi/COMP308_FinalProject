@@ -181,9 +181,9 @@ export default function CovidForm() {
   return (
     <div>
       <p>{errMsg}</p>
-      <h1>Please select all symptoms that you are experiencing</h1>
-      <Form>
-        <Form.Group className="mb-3" controlId="feverCheckbox">
+      <h1 className="text-center">Please select all symptoms that you are experiencing</h1>
+      <Form className="text-center">
+        <Form.Group className="mb-3 " controlId="feverCheckbox">
           <Form.Check
             type="checkbox"
             label="Fever or chills"

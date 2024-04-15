@@ -11,6 +11,9 @@ export default function LandingPage() {
 
   return (
     <>
+      <div className="text-center mt-5">
+        <h1>Covid19 HealthCare Monitor</h1>
+        </div>
       <div className="d-flex gap-3 mb-4">
         {currentForm === "login" ? (
           <Login onFormSwitch={toggleForm} />

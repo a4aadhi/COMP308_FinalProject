@@ -49,7 +49,7 @@ export default function VitalSigns() {
 
 
   const [createVitalSigns, { loading, error, data }] = useMutation(addVitalSigns,{
-    //refetchQueries: [{ query: courses }]
+    
   });
     
 
@@ -78,7 +78,7 @@ export default function VitalSigns() {
 
     return (
         <MDBContainer fluid style={{ overflow: "auto" }}>
-            <MDBCard className=' p-5 shadow-5' style={{ width: '50%', marginTop: '-100px', marginLeft: 'auto', marginRight: 'auto', background: 'hsla(0, 0%, 100%, 0.8)', backdropFilter: 'blur(30px)' }}>
+            <MDBCard className=' p-5 shadow-5' style={{ width: '50%', marginTop: '-10px', marginLeft: 'auto', marginRight: 'auto', background: 'hsla(0, 0%, 100%, 0.8)', backdropFilter: 'blur(30px)' }}>
                 <MDBCardBody className='p-5 text-center'>
 
                     <h2 className="fw-bold mb-5"> Vital Signs</h2>

@@ -40,12 +40,12 @@ export default function Home() {
     <>
       {userType === "NURSE" && loggedIn ? (
         <div>
-          <h1>Alerts</h1>
+          <h1 className="text-center mb-4">Alerts</h1>
           <Alerts />
         </div>
       ) : (
-        <div>
-          <h1>Daily Tips</h1>
+        <div className="">
+          <h1 className="text-center mb-4">Daily Tips</h1>
           <Row xs={1} md={2} lg={3} className="g-4">
       {data.tips.map(tip => (
         <Col key={tip._id}>

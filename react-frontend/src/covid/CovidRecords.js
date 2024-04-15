@@ -58,10 +58,8 @@ export default function CovidRecords() {
 
   return (
     <div>
-      <h1>All Records</h1>{" "}
-      <Button variant="success" onClick={refresh}>
-        Refresh
-      </Button>
+      <h1 className="text-center mt-5">All Records</h1>{" "}
+      
       <p>{message}</p>
       {covidRecords.map((record) => {
         return <CovidRecord key={record._id} covid={record} />;

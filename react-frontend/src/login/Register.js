@@ -129,9 +129,6 @@ export default function Register(props) {
             name="email"
             onChange={handleChange}
           />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formName">
@@ -156,13 +153,15 @@ export default function Register(props) {
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check
-            type="checkbox"
-            label="Nurse"
-            name="isNurse"
-            value={userType}
-            onChange={handleChange}
-          />
+          <div className="d-flex align-items-center">
+            <Form.Check
+              type="checkbox"
+              name="isNurse"
+              value={userType}
+              onChange={handleChange}
+            />
+            <Form.Label className="ms-2 mb-0">Register as a Nurse</Form.Label>
+          </div>
         </Form.Group>
       </Form>
       <div className="d-grid gap-2">
